@@ -13,6 +13,16 @@ flatten([1, [2, [3]]]); // [1, 2, 3]
 ***********************************************************************/
 
 function flatten(arr) {
+
+}
+
+console.log(flatten([1, [2, [3]]])); // [1, 2, 3]
+console.log(flatten([1, 2])); // [1, 2]
+console.log(flatten([])); // []
+
+
+
+/*
   let newArray = [];
   for (let i = 0; i < arr.length; i++) {
     let el = arr[i];
@@ -25,11 +35,6 @@ function flatten(arr) {
     }
   }
   return newArray;
-}
-
-console.log(flatten([1, [2, [3]]])); // [1, 2, 3]
-console.log(flatten([1, 2])); // [1, 2]
-console.log(flatten([])); // []
-
+*/
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 module.exports = flatten;
