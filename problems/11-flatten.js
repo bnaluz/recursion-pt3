@@ -12,15 +12,22 @@ flatten([1, 2]); // [1, 2]
 flatten([1, [2, [3]]]); // [1, 2, 3]
 ***********************************************************************/
 
-function flatten(arr) {
+function flatten(arr, finArr = []) {
+  if (!arr.length) return arr;
 
+  for (let el of arr) {
+    if (el instanceof Array) {
+      finArr.push(...flatten(el));
+    } else {
+      finArr.push(el);
+    }
+  }
+  return finArr;
 }
 
 console.log(flatten([1, [2, [3]]])); // [1, 2, 3]
 console.log(flatten([1, 2])); // [1, 2]
 console.log(flatten([])); // []
-
-
 
 /*
   let newArray = [];

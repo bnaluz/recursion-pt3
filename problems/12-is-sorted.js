@@ -11,7 +11,17 @@ isSorted([5, 4, 3, 2, 1]); // false
 ***********************************************************************/
 
 function isSorted(arr) {
-
+  if (arr[0] > arr[1]) {
+    return false;
+  }
+  if (arr.length === 1) {
+    return true;
+  }
+  if (arr[0] < arr[1]) {
+    arr.shift();
+    isSorted(arr);
+  }
+  return isSorted(arr);
 }
 
 console.log(isSorted([1, 2, 4, 3, 5])); // false

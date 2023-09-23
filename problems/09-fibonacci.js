@@ -19,16 +19,13 @@ fibonacci(4); // 3
 fibonacci(10); // 55
 ***********************************************************************/
 
-function fibonacci(n) {
-}
+function fibonacci(n) {}
 
 console.log(fibonacci(1)); // 1
 console.log(fibonacci(2)); // 1
 console.log(fibonacci(3)); // 2
 console.log(fibonacci(4)); // 3
 console.log(fibonacci(10)); // 55
-
-
 
 /*
 
@@ -42,13 +39,17 @@ console.log(fibonacci(10)); // 55
   //     count++;
   //   }
   //   return secondLast;
+
+
+
   if (n <= 0) {
     return 0;
   } else if (n === 1) {
     return 1;
   } else {
-    return fibonacci(n - 1) + fibonacci(n - 2);
+    return fibonacci(n - 1) + fibonacci(n - 2); 
   }
 */
-  /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
+
+/**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 module.exports = fibonacci;
